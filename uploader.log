@@ -1,0 +1,64 @@
+2025-02-15 13:53:04,917 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 13:53:05,211 - INFO - HTTP Request: POST https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?columns=%22phase%22%2C%22requirement%22%2C%22order%22 "HTTP/2 201 Created"
+2025-02-15 16:06:37,837 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-15 16:06:37,837 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-15 16:06:37,837 - INFO -  * Restarting with stat
+2025-02-15 16:06:38,469 - WARNING -  * Debugger is active!
+2025-02-15 16:06:38,474 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 16:06:44,627 - INFO - Starting update process for requirement: Confirm patient's identity....
+2025-02-15 16:06:44,627 - INFO - Initializing Supabase client...
+2025-02-15 16:06:44,971 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Confirm%20patient%27s%20identity. "HTTP/2 200 OK"
+2025-02-15 16:06:44,976 - INFO - Current requirement state: {'id': 13, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': "Confirm patient's identity.", 'phase': 'before induction of anaesthesia (sign in)', 'order': 1, 'completion_status': False}
+2025-02-15 16:06:44,977 - INFO - Attempting to update completion status...
+2025-02-15 16:06:45,020 - INFO - HTTP Request: PATCH https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?requirement=eq.Confirm%20patient%27s%20identity. "HTTP/2 200 OK"
+2025-02-15 16:06:45,021 - INFO - Successfully updated status for: Confirm patient's identity.
+2025-02-15 16:06:45,081 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Confirm%20patient%27s%20identity. "HTTP/2 200 OK"
+2025-02-15 16:06:45,082 - INFO - Updated requirement state: {'id': 13, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': "Confirm patient's identity.", 'phase': 'before induction of anaesthesia (sign in)', 'order': 1, 'completion_status': True}
+2025-02-15 16:06:45,083 - INFO - 127.0.0.1 - - [15/Feb/2025 16:06:45] "[33mPOST /update-requirement HTTP/1.1[0m" 404 -
+2025-02-15 16:11:58,284 - INFO - 127.0.0.1 - - [15/Feb/2025 16:11:58] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 16:12:40,749 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-15 16:12:40,898 - INFO -  * Restarting with stat
+2025-02-15 16:12:41,881 - WARNING -  * Debugger is active!
+2025-02-15 16:12:41,887 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 16:12:50,957 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-15 16:12:51,109 - INFO -  * Restarting with stat
+2025-02-15 16:12:51,774 - WARNING -  * Debugger is active!
+2025-02-15 16:12:51,778 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 16:12:52,789 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-15 16:12:52,948 - INFO -  * Restarting with stat
+2025-02-15 16:12:53,673 - WARNING -  * Debugger is active!
+2025-02-15 16:12:53,678 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 16:17:56,413 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 16:17:57,737 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 16:17:57,746 - INFO - 127.0.0.1 - - [15/Feb/2025 16:17:57] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 16:18:55,754 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 16:18:56,631 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 16:18:56,632 - INFO - Starting update process for requirement: Confirm procedure to be performed....
+2025-02-15 16:18:56,632 - INFO - Initializing Supabase client...
+2025-02-15 16:18:56,748 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Confirm%20procedure%20to%20be%20performed. "HTTP/2 200 OK"
+2025-02-15 16:18:56,748 - INFO - Current requirement state: {'id': 15, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Confirm procedure to be performed.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 3, 'completion_status': False}
+2025-02-15 16:18:56,748 - INFO - Attempting to update completion status...
+2025-02-15 16:18:56,796 - INFO - HTTP Request: PATCH https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?requirement=eq.Confirm%20procedure%20to%20be%20performed. "HTTP/2 200 OK"
+2025-02-15 16:18:56,796 - INFO - Successfully updated status for: Confirm procedure to be performed.
+2025-02-15 16:18:56,843 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Confirm%20procedure%20to%20be%20performed. "HTTP/2 200 OK"
+2025-02-15 16:18:56,844 - INFO - Updated requirement state: {'id': 15, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Confirm procedure to be performed.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 3, 'completion_status': True}
+2025-02-15 16:18:56,845 - INFO - 127.0.0.1 - - [15/Feb/2025 16:18:56] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-15 16:19:44,248 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 16:19:45,251 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 16:19:45,256 - INFO - Starting update process for requirement: Ensure site is marked or declare it not applicable....
+2025-02-15 16:19:45,257 - INFO - Initializing Supabase client...
+2025-02-15 16:19:45,457 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Ensure%20site%20is%20marked%20or%20declare%20it%20not%20applicable. "HTTP/2 200 OK"
+2025-02-15 16:19:45,458 - INFO - Current requirement state: {'id': 17, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Ensure site is marked or declare it not applicable.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 5, 'completion_status': False}
+2025-02-15 16:19:45,458 - INFO - Attempting to update completion status...
+2025-02-15 16:19:45,504 - INFO - HTTP Request: PATCH https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?requirement=eq.Ensure%20site%20is%20marked%20or%20declare%20it%20not%20applicable. "HTTP/2 200 OK"
+2025-02-15 16:19:45,506 - INFO - Successfully updated status for: Ensure site is marked or declare it not applicable.
+2025-02-15 16:19:45,547 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Ensure%20site%20is%20marked%20or%20declare%20it%20not%20applicable. "HTTP/2 200 OK"
+2025-02-15 16:19:45,548 - INFO - Updated requirement state: {'id': 17, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Ensure site is marked or declare it not applicable.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 5, 'completion_status': True}
+2025-02-15 16:19:45,549 - INFO - 127.0.0.1 - - [15/Feb/2025 16:19:45] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-15 16:20:47,920 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-15 16:20:48,078 - INFO -  * Restarting with stat
+2025-02-15 16:20:49,063 - WARNING -  * Debugger is active!
+2025-02-15 16:20:49,070 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 18:45:20,347 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/supabase_functions/supabaseFunctions.py', reloading
+2025-02-15 18:45:20,499 - INFO -  * Restarting with stat

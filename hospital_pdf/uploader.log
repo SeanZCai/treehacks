@@ -1,0 +1,495 @@
+2025-02-15 16:00:24,549 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-02-15 16:00:24,550 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-15 16:00:24,550 - INFO -  * Restarting with stat
+2025-02-15 16:00:25,192 - WARNING -  * Debugger is active!
+2025-02-15 16:00:25,199 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 16:01:23,701 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/supabase_functions/checklist_update.py', reloading
+2025-02-15 16:01:23,847 - INFO -  * Restarting with stat
+2025-02-15 16:01:24,792 - WARNING -  * Debugger is active!
+2025-02-15 16:01:24,797 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 16:01:59,081 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/supabase_functions/checklist_update.py', reloading
+2025-02-15 16:01:59,247 - INFO -  * Restarting with stat
+2025-02-15 16:02:00,190 - WARNING -  * Debugger is active!
+2025-02-15 16:02:00,196 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 16:02:41,524 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/app.py', reloading
+2025-02-15 16:02:41,665 - INFO -  * Restarting with stat
+2025-02-15 16:02:42,345 - WARNING -  * Debugger is active!
+2025-02-15 16:02:42,349 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 16:02:43,361 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/app.py', reloading
+2025-02-15 16:02:43,509 - INFO -  * Restarting with stat
+2025-02-15 16:02:44,196 - WARNING -  * Debugger is active!
+2025-02-15 16:02:44,201 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 16:05:18,510 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/app.py', reloading
+2025-02-15 16:05:18,660 - INFO -  * Restarting with stat
+2025-02-15 16:05:19,570 - WARNING -  * Debugger is active!
+2025-02-15 16:05:19,576 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 16:05:44,805 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/app.py', reloading
+2025-02-15 16:05:44,950 - INFO -  * Restarting with stat
+2025-02-15 16:05:45,870 - WARNING -  * Debugger is active!
+2025-02-15 16:05:45,875 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 16:06:05,032 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/app.py', reloading
+2025-02-15 16:06:05,178 - INFO -  * Restarting with stat
+2025-02-15 16:06:05,828 - WARNING -  * Debugger is active!
+2025-02-15 16:06:05,833 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 19:54:02,764 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-15 19:54:02,764 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-15 19:54:02,765 - INFO -  * Restarting with stat
+2025-02-15 19:54:03,380 - WARNING -  * Debugger is active!
+2025-02-15 19:54:03,385 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 19:54:10,449 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/supabase_functions/supabaseFunctions.py', reloading
+2025-02-15 19:54:10,587 - INFO -  * Restarting with stat
+2025-02-15 19:54:11,255 - WARNING -  * Debugger is active!
+2025-02-15 19:54:11,260 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 20:00:00,128 - INFO - 127.0.0.1 - - [15/Feb/2025 20:00:00] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 20:00:38,103 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 20:00:39,573 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 20:00:39,580 - INFO - Starting update process for requirement: Confirm patient consent....
+2025-02-15 20:00:39,580 - INFO - Initializing Supabase client...
+2025-02-15 20:00:39,698 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Confirm%20patient%20consent. "HTTP/2 200 OK"
+2025-02-15 20:00:39,698 - INFO - Current requirement state: {'id': 16, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Confirm patient consent.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 4, 'completion_status': False}
+2025-02-15 20:00:39,698 - INFO - Attempting to update completion status...
+2025-02-15 20:00:39,746 - INFO - HTTP Request: PATCH https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?requirement=eq.Confirm%20patient%20consent. "HTTP/2 200 OK"
+2025-02-15 20:00:39,746 - INFO - Successfully updated status for: Confirm patient consent.
+2025-02-15 20:00:39,795 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Confirm%20patient%20consent. "HTTP/2 200 OK"
+2025-02-15 20:00:39,796 - INFO - Updated requirement state: {'id': 16, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Confirm patient consent.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 4, 'completion_status': True}
+2025-02-15 20:00:39,798 - INFO - 127.0.0.1 - - [15/Feb/2025 20:00:39] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-15 20:01:32,252 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-15 20:01:32,420 - INFO -  * Restarting with stat
+2025-02-15 20:01:33,523 - WARNING -  * Debugger is active!
+2025-02-15 20:01:33,528 - INFO -  * Debugger PIN: 447-950-907
+2025-02-15 20:54:32,761 - INFO - 127.0.0.1 - - [15/Feb/2025 20:54:32] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 20:54:33,028 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 20:54:34,140 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 20:54:34,144 - INFO - 127.0.0.1 - - [15/Feb/2025 20:54:34] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 20:54:47,096 - INFO - 127.0.0.1 - - [15/Feb/2025 20:54:47] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 20:54:47,218 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 20:54:47,825 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 20:54:47,830 - INFO - 127.0.0.1 - - [15/Feb/2025 20:54:47] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 20:55:05,513 - INFO - 127.0.0.1 - - [15/Feb/2025 20:55:05] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 20:55:05,703 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 20:55:06,319 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 20:55:09,692 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 20:55:09,696 - INFO - 127.0.0.1 - - [15/Feb/2025 20:55:09] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-15 20:55:25,180 - INFO - 127.0.0.1 - - [15/Feb/2025 20:55:25] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 20:55:25,301 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 20:55:26,060 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 20:55:26,064 - INFO - 127.0.0.1 - - [15/Feb/2025 20:55:26] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 20:55:49,336 - INFO - 127.0.0.1 - - [15/Feb/2025 20:55:49] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 20:55:49,447 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 20:55:54,419 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 20:55:54,435 - INFO - 127.0.0.1 - - [15/Feb/2025 20:55:54] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 20:56:16,768 - INFO - 127.0.0.1 - - [15/Feb/2025 20:56:16] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 20:56:16,890 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 20:56:17,619 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 20:56:17,626 - INFO - 127.0.0.1 - - [15/Feb/2025 20:56:17] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 20:56:50,382 - INFO - 127.0.0.1 - - [15/Feb/2025 20:56:50] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 20:56:50,518 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 20:56:51,103 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 20:56:51,108 - INFO - 127.0.0.1 - - [15/Feb/2025 20:56:51] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 21:39:49,099 - INFO - 127.0.0.1 - - [15/Feb/2025 21:39:49] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 21:39:49,433 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 21:39:50,663 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 21:39:50,667 - INFO - 127.0.0.1 - - [15/Feb/2025 21:39:50] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 21:40:02,953 - INFO - 127.0.0.1 - - [15/Feb/2025 21:40:02] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 21:40:03,140 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 21:40:03,787 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 21:40:03,795 - INFO - 127.0.0.1 - - [15/Feb/2025 21:40:03] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 21:40:25,639 - INFO - 127.0.0.1 - - [15/Feb/2025 21:40:25] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 21:40:25,753 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 21:40:26,506 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 21:40:28,818 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 21:40:28,821 - INFO - 127.0.0.1 - - [15/Feb/2025 21:40:28] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-15 21:40:43,286 - INFO - 127.0.0.1 - - [15/Feb/2025 21:40:43] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 21:40:43,472 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 21:40:44,308 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 21:40:44,314 - INFO - 127.0.0.1 - - [15/Feb/2025 21:40:44] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-15 21:41:05,120 - INFO - 127.0.0.1 - - [15/Feb/2025 21:41:05] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-15 21:41:05,259 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-15 21:41:06,010 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-15 21:41:06,014 - INFO - 127.0.0.1 - - [15/Feb/2025 21:41:06] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:11:03,440 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-16 00:11:03,620 - INFO -  * Restarting with stat
+2025-02-16 00:11:04,730 - WARNING -  * Debugger is active!
+2025-02-16 00:11:04,739 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 00:11:17,872 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-16 00:11:18,014 - INFO -  * Restarting with stat
+2025-02-16 00:11:18,861 - WARNING -  * Debugger is active!
+2025-02-16 00:11:18,867 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 00:12:21,392 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-16 00:12:21,569 - INFO -  * Restarting with stat
+2025-02-16 00:12:22,448 - WARNING -  * Debugger is active!
+2025-02-16 00:12:22,454 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 00:18:39,125 - INFO - 127.0.0.1 - - [16/Feb/2025 00:18:39] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:18:39,847 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:18:41,436 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:18:41,442 - INFO - 127.0.0.1 - - [16/Feb/2025 00:18:41] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:18:57,245 - INFO - 127.0.0.1 - - [16/Feb/2025 00:18:57] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:18:57,379 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:18:58,196 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:18:58,202 - INFO - 127.0.0.1 - - [16/Feb/2025 00:18:58] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:19:13,631 - INFO - 127.0.0.1 - - [16/Feb/2025 00:19:13] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:19:13,745 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:19:14,459 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:19:16,552 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:19:16,555 - INFO - 127.0.0.1 - - [16/Feb/2025 00:19:16] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:19:24,261 - INFO - 127.0.0.1 - - [16/Feb/2025 00:19:24] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:19:24,470 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:19:25,320 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:19:25,325 - INFO - 127.0.0.1 - - [16/Feb/2025 00:19:25] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:19:36,287 - INFO - 127.0.0.1 - - [16/Feb/2025 00:19:36] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:19:36,470 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:19:37,190 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:19:41,195 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:19:41,199 - INFO - 127.0.0.1 - - [16/Feb/2025 00:19:41] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:19:52,250 - INFO - 127.0.0.1 - - [16/Feb/2025 00:19:52] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:19:52,474 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:19:53,139 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:19:53,145 - INFO - 127.0.0.1 - - [16/Feb/2025 00:19:53] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:25:01,401 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/app.py', reloading
+2025-02-16 00:25:01,583 - INFO -  * Restarting with stat
+2025-02-16 00:25:02,579 - WARNING -  * Debugger is active!
+2025-02-16 00:25:02,585 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 00:25:47,636 - INFO - 127.0.0.1 - - [16/Feb/2025 00:25:47] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:25:47,997 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:25:48,706 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:25:48,712 - INFO - 127.0.0.1 - - [16/Feb/2025 00:25:48] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:25:52,392 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:25:53,205 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:25:53,209 - INFO - 127.0.0.1 - - [16/Feb/2025 00:25:53] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:26:01,414 - INFO - 127.0.0.1 - - [16/Feb/2025 00:26:01] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:26:01,600 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:26:02,219 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:26:02,223 - INFO - 127.0.0.1 - - [16/Feb/2025 00:26:02] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:26:09,475 - INFO - 127.0.0.1 - - [16/Feb/2025 00:26:09] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:26:09,605 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:26:10,315 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:26:10,320 - INFO - 127.0.0.1 - - [16/Feb/2025 00:26:10] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:26:21,144 - INFO - 127.0.0.1 - - [16/Feb/2025 00:26:21] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:26:21,324 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:26:22,053 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:26:22,056 - INFO - 127.0.0.1 - - [16/Feb/2025 00:26:22] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:26:31,027 - INFO - 127.0.0.1 - - [16/Feb/2025 00:26:31] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:26:31,151 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:26:31,824 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:26:31,826 - INFO - Starting update process for requirement: Evaluate risk of >500ml blood loss and ensure adequate IV access and fluids are planned if needed....
+2025-02-16 00:26:31,826 - INFO - Initializing Supabase client...
+2025-02-16 00:26:32,017 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Evaluate%20risk%20of%20%3E500ml%20blood%20loss%20and%20ensure%20adequate%20IV%20access%20and%20fluids%20are%20planned%20if%20needed. "HTTP/2 200 OK"
+2025-02-16 00:26:32,018 - INFO - Current requirement state: {'id': 22, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Evaluate risk of >500ml blood loss and ensure adequate IV access and fluids are planned if needed.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 10, 'completion_status': False}
+2025-02-16 00:26:32,018 - INFO - Attempting to update completion status...
+2025-02-16 00:26:32,087 - INFO - HTTP Request: PATCH https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?requirement=eq.Evaluate%20risk%20of%20%3E500ml%20blood%20loss%20and%20ensure%20adequate%20IV%20access%20and%20fluids%20are%20planned%20if%20needed. "HTTP/2 200 OK"
+2025-02-16 00:26:32,088 - INFO - Successfully updated status for: Evaluate risk of >500ml blood loss and ensure adequate IV access and fluids are planned if needed.
+2025-02-16 00:26:32,139 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Evaluate%20risk%20of%20%3E500ml%20blood%20loss%20and%20ensure%20adequate%20IV%20access%20and%20fluids%20are%20planned%20if%20needed. "HTTP/2 200 OK"
+2025-02-16 00:26:32,140 - INFO - Updated requirement state: {'id': 22, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Evaluate risk of >500ml blood loss and ensure adequate IV access and fluids are planned if needed.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 10, 'completion_status': True}
+2025-02-16 00:26:32,141 - INFO - 127.0.0.1 - - [16/Feb/2025 00:26:32] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:26:47,200 - INFO - 127.0.0.1 - - [16/Feb/2025 00:26:47] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:26:47,324 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:26:47,940 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:26:47,948 - INFO - 127.0.0.1 - - [16/Feb/2025 00:26:47] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:33:13,919 - INFO - 127.0.0.1 - - [16/Feb/2025 00:33:13] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:33:14,276 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:33:15,006 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:33:19,624 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:33:19,628 - INFO - 127.0.0.1 - - [16/Feb/2025 00:33:19] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 00:33:28,258 - INFO - 127.0.0.1 - - [16/Feb/2025 00:33:28] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 00:33:28,389 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 00:33:29,074 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:33:32,210 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 00:33:32,212 - INFO - 127.0.0.1 - - [16/Feb/2025 00:33:32] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 01:34:15,798 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:34:15,958 - INFO -  * Restarting with stat
+2025-02-16 01:34:17,028 - WARNING -  * Debugger is active!
+2025-02-16 01:34:17,034 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:34:34,196 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:34:34,326 - INFO -  * Restarting with stat
+2025-02-16 01:34:34,975 - WARNING -  * Debugger is active!
+2025-02-16 01:34:34,979 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:35:09,268 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:35:09,411 - INFO -  * Restarting with stat
+2025-02-16 01:35:10,036 - WARNING -  * Debugger is active!
+2025-02-16 01:35:10,040 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:35:13,078 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:35:13,219 - INFO -  * Restarting with stat
+2025-02-16 01:35:13,877 - WARNING -  * Debugger is active!
+2025-02-16 01:35:13,882 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:36:06,354 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:36:06,507 - INFO -  * Restarting with stat
+2025-02-16 01:36:07,347 - WARNING -  * Debugger is active!
+2025-02-16 01:36:07,352 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:36:29,575 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:36:29,709 - INFO -  * Restarting with stat
+2025-02-16 01:36:30,353 - WARNING -  * Debugger is active!
+2025-02-16 01:36:30,357 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:36:38,425 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:36:38,562 - INFO -  * Restarting with stat
+2025-02-16 01:36:39,186 - WARNING -  * Debugger is active!
+2025-02-16 01:36:39,190 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:36:50,294 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:36:50,430 - INFO -  * Restarting with stat
+2025-02-16 01:36:51,070 - WARNING -  * Debugger is active!
+2025-02-16 01:36:51,074 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:37:20,339 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:37:20,471 - INFO -  * Restarting with stat
+2025-02-16 01:37:21,100 - WARNING -  * Debugger is active!
+2025-02-16 01:37:21,105 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:37:49,375 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:37:49,521 - INFO -  * Restarting with stat
+2025-02-16 01:37:50,278 - WARNING -  * Debugger is active!
+2025-02-16 01:37:50,284 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:38:23,583 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:38:23,733 - INFO -  * Restarting with stat
+2025-02-16 01:38:24,357 - WARNING -  * Debugger is active!
+2025-02-16 01:38:24,361 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:38:27,387 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:38:27,534 - INFO -  * Restarting with stat
+2025-02-16 01:38:28,159 - WARNING -  * Debugger is active!
+2025-02-16 01:38:28,163 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:38:36,230 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:38:36,365 - INFO -  * Restarting with stat
+2025-02-16 01:38:37,028 - WARNING -  * Debugger is active!
+2025-02-16 01:38:37,033 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:46:07,243 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:46:07,424 - INFO -  * Restarting with stat
+2025-02-16 01:46:08,421 - WARNING -  * Debugger is active!
+2025-02-16 01:46:08,427 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:46:16,514 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:46:16,694 - INFO -  * Restarting with stat
+2025-02-16 01:46:17,322 - WARNING -  * Debugger is active!
+2025-02-16 01:46:17,327 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:53:15,316 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:53:15,486 - INFO -  * Restarting with stat
+2025-02-16 01:53:16,440 - WARNING -  * Debugger is active!
+2025-02-16 01:53:16,445 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:54:10,879 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:54:11,028 - INFO -  * Restarting with stat
+2025-02-16 01:54:11,914 - WARNING -  * Debugger is active!
+2025-02-16 01:54:11,919 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:54:25,050 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:54:25,214 - INFO -  * Restarting with stat
+2025-02-16 01:54:25,864 - WARNING -  * Debugger is active!
+2025-02-16 01:54:25,868 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:54:29,898 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:54:30,061 - INFO -  * Restarting with stat
+2025-02-16 01:54:30,715 - WARNING -  * Debugger is active!
+2025-02-16 01:54:30,720 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:54:36,780 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:54:36,931 - INFO -  * Restarting with stat
+2025-02-16 01:54:37,580 - WARNING -  * Debugger is active!
+2025-02-16 01:54:37,584 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:54:38,596 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:54:38,757 - INFO -  * Restarting with stat
+2025-02-16 01:54:39,413 - WARNING -  * Debugger is active!
+2025-02-16 01:54:39,417 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:54:45,471 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:54:45,610 - INFO -  * Restarting with stat
+2025-02-16 01:54:46,245 - WARNING -  * Debugger is active!
+2025-02-16 01:54:46,250 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:54:48,269 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:54:48,413 - INFO -  * Restarting with stat
+2025-02-16 01:54:49,071 - WARNING -  * Debugger is active!
+2025-02-16 01:54:49,077 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:55:18,353 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/generate_report.py', reloading
+2025-02-16 01:55:18,508 - INFO -  * Restarting with stat
+2025-02-16 01:55:19,152 - WARNING -  * Debugger is active!
+2025-02-16 01:55:19,156 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:55:50,464 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:55:50,610 - INFO -  * Restarting with stat
+2025-02-16 01:55:51,246 - WARNING -  * Debugger is active!
+2025-02-16 01:55:51,251 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:58:31,789 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:58:31,933 - INFO -  * Restarting with stat
+2025-02-16 01:58:32,564 - WARNING -  * Debugger is active!
+2025-02-16 01:58:32,569 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 01:58:36,604 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 01:58:36,736 - INFO -  * Restarting with stat
+2025-02-16 01:58:37,409 - WARNING -  * Debugger is active!
+2025-02-16 01:58:37,414 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:01:05,745 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 02:01:05,895 - INFO -  * Restarting with stat
+2025-02-16 02:01:06,847 - WARNING -  * Debugger is active!
+2025-02-16 02:01:06,853 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:06:09,638 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 02:06:09,792 - INFO -  * Restarting with stat
+2025-02-16 02:06:10,743 - WARNING -  * Debugger is active!
+2025-02-16 02:06:10,750 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:15:51,370 - INFO - 127.0.0.1 - - [16/Feb/2025 02:15:51] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:15:51,732 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:15:52,824 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:15:55,451 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:15:55,455 - INFO - 127.0.0.1 - - [16/Feb/2025 02:15:55] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 02:15:59,331 - INFO - 127.0.0.1 - - [16/Feb/2025 02:15:59] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:15:59,452 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:16:00,137 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:16:02,743 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:16:02,746 - INFO - 127.0.0.1 - - [16/Feb/2025 02:16:02] "[35m[1mPOST /process-conversation HTTP/1.1[0m" 500 -
+2025-02-16 02:21:59,770 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-16 02:21:59,937 - INFO -  * Restarting with stat
+2025-02-16 02:22:00,910 - WARNING -  * Debugger is active!
+2025-02-16 02:22:00,915 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:22:19,083 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-16 02:22:19,241 - INFO -  * Restarting with stat
+2025-02-16 02:22:19,885 - WARNING -  * Debugger is active!
+2025-02-16 02:22:19,890 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:34:17,649 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-16 02:34:17,649 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-16 02:34:17,650 - INFO -  * Restarting with stat
+2025-02-16 02:34:18,274 - WARNING -  * Debugger is active!
+2025-02-16 02:34:18,280 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:35:08,707 - INFO - 127.0.0.1 - - [16/Feb/2025 02:35:08] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:35:09,046 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:35:09,702 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:35:12,518 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:35:12,522 - INFO - 127.0.0.1 - - [16/Feb/2025 02:35:12] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:35:19,692 - INFO - 127.0.0.1 - - [16/Feb/2025 02:35:19] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:35:19,899 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:35:20,579 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:35:20,582 - INFO - 127.0.0.1 - - [16/Feb/2025 02:35:20] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:35:34,086 - INFO - 127.0.0.1 - - [16/Feb/2025 02:35:34] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:35:34,279 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:35:34,931 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:35:34,944 - INFO - 127.0.0.1 - - [16/Feb/2025 02:35:34] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:35:46,824 - INFO - 127.0.0.1 - - [16/Feb/2025 02:35:46] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:35:46,967 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:35:47,555 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:35:50,464 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:35:50,468 - INFO - 127.0.0.1 - - [16/Feb/2025 02:35:50] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:36:10,467 - INFO - 127.0.0.1 - - [16/Feb/2025 02:36:10] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:36:10,578 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:36:11,436 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:36:11,439 - INFO - Starting update process for requirement: Evaluate risk of >500ml blood loss and ensure adequate IV access and fluids are planned if needed....
+2025-02-16 02:36:11,439 - INFO - Initializing Supabase client...
+2025-02-16 02:36:11,549 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Evaluate%20risk%20of%20%3E500ml%20blood%20loss%20and%20ensure%20adequate%20IV%20access%20and%20fluids%20are%20planned%20if%20needed. "HTTP/2 200 OK"
+2025-02-16 02:36:11,549 - INFO - Current requirement state: {'id': 22, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Evaluate risk of >500ml blood loss and ensure adequate IV access and fluids are planned if needed.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 10, 'completion_status': False}
+2025-02-16 02:36:11,550 - INFO - Attempting to update completion status...
+2025-02-16 02:36:11,587 - INFO - HTTP Request: PATCH https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?requirement=eq.Evaluate%20risk%20of%20%3E500ml%20blood%20loss%20and%20ensure%20adequate%20IV%20access%20and%20fluids%20are%20planned%20if%20needed. "HTTP/2 200 OK"
+2025-02-16 02:36:11,588 - INFO - Successfully updated status for: Evaluate risk of >500ml blood loss and ensure adequate IV access and fluids are planned if needed.
+2025-02-16 02:36:11,626 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Evaluate%20risk%20of%20%3E500ml%20blood%20loss%20and%20ensure%20adequate%20IV%20access%20and%20fluids%20are%20planned%20if%20needed. "HTTP/2 200 OK"
+2025-02-16 02:36:11,627 - INFO - Updated requirement state: {'id': 22, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Evaluate risk of >500ml blood loss and ensure adequate IV access and fluids are planned if needed.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 10, 'completion_status': True}
+2025-02-16 02:36:11,627 - INFO - 127.0.0.1 - - [16/Feb/2025 02:36:11] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:36:13,067 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:36:13,752 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:36:13,758 - INFO - 127.0.0.1 - - [16/Feb/2025 02:36:13] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:36:25,605 - INFO - 127.0.0.1 - - [16/Feb/2025 02:36:25] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:36:25,735 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:36:26,451 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:36:26,455 - INFO - 127.0.0.1 - - [16/Feb/2025 02:36:26] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:36:45,073 - INFO - 127.0.0.1 - - [16/Feb/2025 02:36:45] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:36:45,204 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:36:46,040 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:36:50,563 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:36:50,567 - INFO - 127.0.0.1 - - [16/Feb/2025 02:36:50] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:36:59,488 - INFO - 127.0.0.1 - - [16/Feb/2025 02:36:59] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:36:59,675 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:37:00,385 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:37:03,021 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:37:03,024 - INFO - 127.0.0.1 - - [16/Feb/2025 02:37:03] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:37:20,136 - INFO - 127.0.0.1 - - [16/Feb/2025 02:37:20] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:37:20,261 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:37:20,975 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:37:24,731 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:37:24,732 - INFO - 127.0.0.1 - - [16/Feb/2025 02:37:24] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:37:24,836 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:37:25,468 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:37:25,471 - INFO - 127.0.0.1 - - [16/Feb/2025 02:37:25] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:37:33,045 - INFO - 127.0.0.1 - - [16/Feb/2025 02:37:33] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:37:33,230 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:37:33,953 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:37:33,960 - INFO - 127.0.0.1 - - [16/Feb/2025 02:37:33] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:37:53,386 - INFO - 127.0.0.1 - - [16/Feb/2025 02:37:53] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:37:53,540 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:37:54,200 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:37:57,491 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:37:57,495 - INFO - 127.0.0.1 - - [16/Feb/2025 02:37:57] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:04,569 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:04] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:04,724 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:38:05,544 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:38:05,547 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:05] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:18,353 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:18] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:18,493 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:38:19,368 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:38:19,371 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:19] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:27,045 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:27] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:27,228 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:38:27,814 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:38:27,818 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:27] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:37,533 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:37] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:37,715 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:38:38,569 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:38:42,760 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:38:42,764 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:42] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:43,643 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:43] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:43,810 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:38:44,616 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:38:44,620 - INFO - Starting update process for requirement: Ensure pulse oximeter is on the patient and functioning....
+2025-02-16 02:38:44,620 - INFO - Initializing Supabase client...
+2025-02-16 02:38:44,744 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Ensure%20pulse%20oximeter%20is%20on%20the%20patient%20and%20functioning. "HTTP/2 200 OK"
+2025-02-16 02:38:44,745 - INFO - Current requirement state: {'id': 19, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Ensure pulse oximeter is on the patient and functioning.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 7, 'completion_status': False}
+2025-02-16 02:38:44,745 - INFO - Attempting to update completion status...
+2025-02-16 02:38:44,858 - INFO - HTTP Request: PATCH https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?requirement=eq.Ensure%20pulse%20oximeter%20is%20on%20the%20patient%20and%20functioning. "HTTP/2 200 OK"
+2025-02-16 02:38:44,860 - INFO - Successfully updated status for: Ensure pulse oximeter is on the patient and functioning.
+2025-02-16 02:38:44,901 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=%2A&requirement=eq.Ensure%20pulse%20oximeter%20is%20on%20the%20patient%20and%20functioning. "HTTP/2 200 OK"
+2025-02-16 02:38:44,902 - INFO - Updated requirement state: {'id': 19, 'created_at': '2025-02-15T21:53:05.148801+00:00', 'requirement': 'Ensure pulse oximeter is on the patient and functioning.', 'phase': 'before induction of anaesthesia (sign in)', 'order': 7, 'completion_status': True}
+2025-02-16 02:38:44,904 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:44] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:49,835 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:49] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:49,933 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:38:50,658 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:38:50,663 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:50] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:55,145 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:55] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:38:55,345 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:38:56,064 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:38:57,778 - INFO - HTTP Request: POST https://api.perplexity.ai/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:38:57,781 - INFO - 127.0.0.1 - - [16/Feb/2025 02:38:57] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:39:02,032 - INFO - 127.0.0.1 - - [16/Feb/2025 02:39:02] "OPTIONS /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:39:02,232 - INFO - HTTP Request: GET https://uofqbmdvdbxtfrrfghgs.supabase.co/rest/v1/treehacks_reqs?select=requirement&order=phase%2Corder "HTTP/2 200 OK"
+2025-02-16 02:39:02,998 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-16 02:39:03,005 - INFO - 127.0.0.1 - - [16/Feb/2025 02:39:03] "POST /process-conversation HTTP/1.1" 200 -
+2025-02-16 02:44:58,283 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 02:44:58,468 - INFO -  * Restarting with stat
+2025-02-16 02:44:59,450 - WARNING -  * Debugger is active!
+2025-02-16 02:44:59,457 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:47:26,750 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/generate_report.py', reloading
+2025-02-16 02:47:26,917 - INFO -  * Restarting with stat
+2025-02-16 02:47:27,728 - WARNING -  * Debugger is active!
+2025-02-16 02:47:27,733 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:48:35,314 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/generate_report.py', reloading
+2025-02-16 02:48:35,493 - INFO -  * Restarting with stat
+2025-02-16 02:48:36,406 - WARNING -  * Debugger is active!
+2025-02-16 02:48:36,412 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:58:17,897 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 02:58:18,062 - INFO -  * Restarting with stat
+2025-02-16 02:58:19,075 - WARNING -  * Debugger is active!
+2025-02-16 02:58:19,081 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:58:34,229 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 02:58:34,380 - INFO -  * Restarting with stat
+2025-02-16 02:58:35,024 - WARNING -  * Debugger is active!
+2025-02-16 02:58:35,028 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:58:40,071 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 02:58:40,235 - INFO -  * Restarting with stat
+2025-02-16 02:58:40,910 - WARNING -  * Debugger is active!
+2025-02-16 02:58:40,915 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:58:56,064 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/collect_data.py', reloading
+2025-02-16 02:58:56,228 - INFO -  * Restarting with stat
+2025-02-16 02:58:56,963 - WARNING -  * Debugger is active!
+2025-02-16 02:58:56,967 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 02:59:38,347 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/after_action_report/generate_report.py', reloading
+2025-02-16 02:59:38,484 - INFO -  * Restarting with stat
+2025-02-16 02:59:39,150 - WARNING -  * Debugger is active!
+2025-02-16 02:59:39,155 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 03:15:48,154 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-16 03:15:48,316 - INFO -  * Restarting with stat
+2025-02-16 03:15:48,977 - WARNING -  * Debugger is active!
+2025-02-16 03:15:48,981 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 03:20:52,807 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-16 03:20:52,954 - INFO -  * Restarting with stat
+2025-02-16 03:58:01,865 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2025-02-16 03:58:01,866 - INFO - [33mPress CTRL+C to quit[0m
+2025-02-16 03:58:01,866 - INFO -  * Restarting with stat
+2025-02-16 03:58:02,528 - WARNING -  * Debugger is active!
+2025-02-16 03:58:02,536 - INFO -  * Debugger PIN: 447-950-907
+2025-02-16 03:58:42,922 - INFO -  * Detected change in '/Users/seancai/treehacks/hospital_pdf/functions/conversation_intake.py', reloading
+2025-02-16 03:58:43,070 - INFO -  * Restarting with stat
+2025-02-16 03:58:44,057 - WARNING -  * Debugger is active!
+2025-02-16 03:58:44,062 - INFO -  * Debugger PIN: 447-950-907

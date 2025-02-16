@@ -1,0 +1,6 @@
+openai
+PyPDF2
+python-dotenv
+flask
+google-generativeai
+supabase
