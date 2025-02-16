@@ -12,4 +12,5 @@ SUPABASE_URL=
 SUPABASE_SERVICE_KEY=
 MISTRAL_API_KEY=
 
-run python/app.py (or whereever app.py is located!)
+run hospital_pdf/app.py in root to start flask backend server, then go to start frontend servers (or whereever app.py is located!).
+https://github.com/SeanZCai/treehacks-agentic-surgeon
