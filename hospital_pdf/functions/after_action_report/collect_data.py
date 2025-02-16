@@ -2,7 +2,12 @@
 import requests
 import json
 import openai
-from hospital_pdf.functions.supabaseFunctions import get_all_requirements, initialize_supabase
+from functions.supabase_functions.supabaseFunctions import get_all_requirements, initialize_supabase
+from openai import OpenAI
+import os
+
+# Initialize OpenAI client
+client = OpenAI()  # This will automatically use OPENAI_API_KEY from environment
 
 def get_conversations():
     try:
@@ -63,21 +68,37 @@ def get_audio_analysis():
     # TODO: Implement this function
     return None
 
+def get_preprocessing_data():
+    """
+    Retrieve preprocessing data from the 'preprocessing' table.
+    """
+    try:
+        print("Fetching preprocessing data from 'preprocessing' table...")
+        supabase = initialize_supabase()
+        response = supabase.table('preprocessing').select('*').execute()
+        print("Preprocessing data fetched successfully.")
+        return response.data
+    except Exception as e:
+        print(f"Error fetching preprocessing data: {e}")
+        return None
+
 def collect_post_surgery_report_data():
     """
     Collect data from various sources and compile it into one JSON object
-    intended to be fed to o3 for post surgery report generation.
+    intended to be fed to OpenAI for post surgery report generation.
     """
     print("Starting data collection for post surgery report...")
 
     checklist_data = get_checklist_performance()
     vision_data = get_supabase_vision_data_interpretations()
     live_metrics_data = get_live_surgeon_metrics()
+    preprocessing_data = get_preprocessing_data()
 
     report_data = {
         "checklistPerformance": checklist_data,
         "visionInterpretations": vision_data,
-        "liveSurgeonMetrics": live_metrics_data
+        "liveSurgeonMetrics": live_metrics_data,
+        "preprocessingData": preprocessing_data
     }
 
     print("Data collection complete.")
@@ -85,10 +106,10 @@ def collect_post_surgery_report_data():
 
 def synthesize_post_surgery_report():
     """
-    Synthesize the post-surgery report by feeding the collected data to the O3 (OpenAI) API,
+    Synthesize the post-surgery report by feeding the collected data to the OpenAI API,
     which generates a detailed report.
     """
-    print("Starting synthesis of post-surgery report via O3 API call...")
+    print("Starting synthesis of post-surgery report via OpenAI API call...")
 
     # Collect the raw data
     collected_data = collect_post_surgery_report_data()
@@ -106,8 +127,8 @@ def synthesize_post_surgery_report():
 
     print("Sending prompt to OpenAI ChatCompletion API...")
     try:
-        response = openai.ChatCompletion.create(
-            model="o3-mini",
+        response = client.chat.completions.create(
+            model="gpt-4o",
             messages=[
                 {
                     "role": "system",

@@ -8,6 +8,7 @@ from datetime import datetime
 from ..conversation_intake import test_compliance_processing
 from .collect_data import synthesize_post_surgery_report
 import os
+import logging
 
 def create_section_header(text):
     """Create a styled section header"""
@@ -124,7 +125,7 @@ def generate_pdf_report(report_data, output_path):
         print(f"Error generating PDF: {e}")
         return False
 
-def run_report_generation(conversation_text=None):
+def run_report_generation():
     """Main function to run the entire report generation process"""
     print("Starting post-surgery report generation process...")
     
@@ -133,37 +134,47 @@ def run_report_generation(conversation_text=None):
         output_dir = "generated_reports"
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
+            print(f"Created output directory: {output_dir}")
         
         # Generate timestamp for unique filename
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         output_path = os.path.join(output_dir, f"post_surgery_report_{timestamp}.pdf")
-        
-        # Process conversation if provided
-        if conversation_text:
-            print("Processing conversation text...")
-            compliance_results = test_compliance_processing(conversation_text)
-            if compliance_results:
-                print("Compliance processing complete.")
+        print(f"Will save report to: {output_path}")
         
         # Synthesize report
         print("Synthesizing post-surgery report...")
-        synthesized_report = synthesize_post_surgery_report()
+        try:
+            synthesized_report = synthesize_post_surgery_report()
+            print(f"Synthesis result: {bool(synthesized_report)}")
+        except Exception as synth_error:
+            print(f"Error in report synthesis: {str(synth_error)}")
+            return None
         
         if synthesized_report:
             print("Report synthesis complete. Generating PDF...")
-            success = generate_pdf_report(synthesized_report, output_path)
-            
+            try:
+                success = generate_pdf_report(synthesized_report, output_path)
+                print(f"PDF generation result: {success}")
+            except Exception as pdf_error:
+                print(f"Error in PDF generation: {str(pdf_error)}")
+                return None
+                
             if success:
-                return output_path
+                if os.path.exists(output_path):
+                    print(f"Successfully generated report at {output_path}")
+                    return output_path
+                else:
+                    print(f"PDF file not found at expected path: {output_path}")
+                    return None
             else:
                 print("Failed to generate PDF report.")
                 return None
         else:
-            print("Failed to synthesize report.")
+            print("Failed to synthesize report - got empty result")
             return None
             
     except Exception as e:
-        print(f"Error in report generation process: {e}")
+        print(f"Error in report generation process: {str(e)}")
         return None
 
 if __name__ == "__main__":
@@ -172,4 +183,4 @@ if __name__ == "__main__":
     if output_file:
         print(f"Report generated successfully at: {output_file}")
     else:
-        print("Report generation failed.")
+        print("Failed to generate report")

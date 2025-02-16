@@ -5,6 +5,9 @@ from io import BytesIO
 from functions.video_intake import process_surgical_video
 from functions.conversation_intake import process_compliance_requirements, test_compliance_processing
 from functions.supabase_functions.checklist_update import update_requirement_status
+from functions.after_action_report.generate_report import run_report_generation
+from functions.preprocessing.analyzePreSurgery import analyze_pre_surgery_compliance, load_and_encode_images, update_supabase
+import os
 
 app = Flask(__name__)
 CORS(app)
@@ -80,6 +83,98 @@ def update_requirement():
             
     except Exception as e:
         error_msg = f"Error in update_requirement: {str(e)}"
+        print(error_msg)
+        return jsonify({'error': error_msg}), 500
+
+@app.route('/generate-report', methods=['POST'])
+def generate_report():
+    """
+    Endpoint to generate post-surgery report
+    """
+    try:
+        output_path = run_report_generation()
+        
+        if output_path and os.path.exists(output_path):
+            return send_file(
+                output_path,
+                mimetype='application/pdf',
+                as_attachment=True,
+                download_name='post_surgery_report.pdf'
+            )
+        else:
+            return jsonify({'error': 'Failed to generate report'}), 500
+            
+    except Exception as e:
+        error_msg = f"Error in generate_report: {str(e)}"
+        print(error_msg)
+        return jsonify({'error': error_msg}), 500
+
+@app.route('/analyze-pre-surgery', methods=['POST'])
+def analyze_pre_surgery():
+    """
+    Endpoint to analyze pre-surgery images for compliance
+    """
+    try:
+        if 'images' not in request.files:
+            return jsonify({'error': 'No images provided'}), 400
+
+        # Get all images from the request
+        images = request.files.getlist('images')
+        if not images:
+            return jsonify({'error': 'Empty image list'}), 400
+
+        print(f"Received {len(images)} images for analysis")
+        
+        # Create temporary directory with absolute path
+        temp_dir = os.path.abspath("temp_pre_surgery_images")
+        if not os.path.exists(temp_dir):
+            os.makedirs(temp_dir)
+            print(f"Created temporary directory at: {temp_dir}")
+            
+        try:
+            # Save uploaded images temporarily
+            image_paths = []
+            for img in images:
+                if img.filename:
+                    # Sanitize filename
+                    safe_filename = os.path.basename(img.filename)
+                    temp_path = os.path.join(temp_dir, safe_filename)
+                    img.save(temp_path)
+                    image_paths.append(temp_path)
+                    print(f"Saved image to {temp_path}")
+
+            # Process the images
+            encoded_images = load_and_encode_images(temp_dir)
+            if not encoded_images:
+                return jsonify({'error': 'Failed to process images'}), 500
+
+            # Analyze the images
+            analysis = analyze_pre_surgery_compliance(encoded_images)
+            if not analysis:
+                return jsonify({'error': 'Failed to analyze images'}), 500
+
+            # Update Supabase with results
+            update_result = update_supabase(analysis)
+            if not update_result:
+                return jsonify({'error': 'Failed to update database'}), 500
+
+            return jsonify({
+                'success': True,
+                'analysis': analysis
+            })
+
+        finally:
+            # Clean up temporary files
+            for path in image_paths:
+                if os.path.exists(path):
+                    os.remove(path)
+                    print(f"Removed temporary file: {path}")
+            if os.path.exists(temp_dir):
+                os.rmdir(temp_dir)
+                print(f"Removed temporary directory: {temp_dir}")
+
+    except Exception as e:
+        error_msg = f"Error in analyze_pre_surgery: {str(e)}"
         print(error_msg)
         return jsonify({'error': error_msg}), 500
 

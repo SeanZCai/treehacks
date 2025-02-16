@@ -44,13 +44,14 @@ Rules:
 4. Partial satisfaction of a requirement should be marked as 'B'
 5. Any ambiguity should be marked as 'B'"""
 
-def process_compliance_requirements(requirements: List[str], conversation_context: str) -> List[Dict[str, str]]:
+def process_compliance_requirements(requirements: List[str], conversation_context: str, instructions: List[str] = None) -> List[Dict[str, str]]:
     """
     Process multiple compliance requirements against conversation context.
     
     Args:
         requirements (List[str]): List of compliance requirements to check
         conversation_context (str): The conversation context to analyze
+        instructions (List[str], optional): List of instructions corresponding to each requirement
         
     Returns:
         List[Dict[str, str]]: List of results containing requirement and status (A/B/C)
@@ -60,7 +61,14 @@ def process_compliance_requirements(requirements: List[str], conversation_contex
         print(f"Processing {len(requirements)} requirements")
         print(f"Context length: {len(conversation_context)} characters")
         
-        # Prepare the content message with all requirements
+        # Prepare the content message with requirements and instructions if provided
+        requirements_with_instructions = []
+        for i, req in enumerate(requirements):
+            if instructions and i < len(instructions) and instructions[i]:
+                requirements_with_instructions.append(f"{i+1}. {req} (Instructions: {instructions[i]})")
+            else:
+                requirements_with_instructions.append(f"{i+1}. {req}")
+
         content_message = f"""Conversation Context:
 {conversation_context}
 
@@ -69,7 +77,7 @@ For each requirement, respond with ONLY A, B, or C according to the rules.
 Format your response as a list, one letter per line, in order.
 
 Compliance Requirements:
-{chr(10).join(f"{i+1}. {req}" for i, req in enumerate(requirements))}
+{chr(10).join(requirements_with_instructions)}
 
 Remember: Respond ONLY with A, B, or C for each requirement, one per line."""
         
@@ -122,7 +130,7 @@ def test_compliance_processing(conversation_text: str):
         # Get all requirements from Supabase
         supabase = initialize_supabase()
         result = supabase.table('treehacks_reqs') \
-            .select('requirement') \
+            .select('requirement,instructions') \
             .order('phase,order') \
             .execute()
             

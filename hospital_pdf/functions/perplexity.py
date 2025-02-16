@@ -13,7 +13,7 @@ client = OpenAI(
 
 def search_and_answer(question: str, context: str = "", temperature: float = 0.2) -> str:
     """
-    Uses Perplexity's Online model to search and answer a question with optional context.
+    Uses Perplexity's Sonar model to answer a question with optional context.
     
     Args:
         question (str): The question to be answered
@@ -43,7 +43,7 @@ def search_and_answer(question: str, context: str = "", temperature: float = 0.2
         ]
         
         response = client.chat.completions.create(
-            model="pplx-7b-online",
+            model="llama-3.1-sonar-small-128k-chat",
             messages=messages,
             temperature=temperature,
             top_p=0.9,
